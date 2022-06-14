@@ -58,6 +58,10 @@ async function main() {
     buttonsIds.forEach(btnId =>{
         const btn = document.querySelector(btnId)
         btn.addEventListener('click', (e) => {
+
+            // Desabilita o botão
+            e.target.disabled = true
+
             const nota = e.target.id.slice(4)
             if (nota == notas[numeroAleatorio]) {
 
@@ -84,6 +88,9 @@ async function main() {
                     numeroAleatorio = novoNumeroAleatorio
 
                     imgNota.src = `./assets/notas/${numeroAleatorio}.png`
+
+                    // Libera o botão
+                    e.target.disabled = false
 
                 }, 1000)
 
