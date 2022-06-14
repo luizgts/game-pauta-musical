@@ -59,11 +59,11 @@ async function main() {
         const btn = document.querySelector(btnId)
         btn.addEventListener('click', (e) => {
 
-            // Desabilita o botão
-            e.target.disabled = true
-
             const nota = e.target.id.slice(4)
             if (nota == notas[numeroAleatorio]) {
+
+                // Desabilita o botão
+                e.target.disabled = true
 
                 // Muda a cor do botão para verde
                 e.target.className = 'app__button app__button-right'
