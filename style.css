@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-/* 
-# Padrão BEM
-Bloco           .lista
-Elemento        .lista__item
-Modificador     .lista__item-destaque
-*/
-
 /* Reset */
 body, h2, p {
     margin: 0;

@@ -1,4 +1,3 @@
-// TODO: Adicionar link para o facebook
 window.addEventListener('load', main, false)
 
 function randint(end) {
@@ -37,7 +36,6 @@ async function main() {
         1: 're',
         0: 'do',
     }
-
 
     // binds
     const pentagrama = document.querySelector('#pentagrama')
@@ -93,7 +91,6 @@ async function main() {
                     e.target.disabled = false
 
                 }, 1000)
-
                 
             } else {
                 // Muda a cor do botão para vermelho
