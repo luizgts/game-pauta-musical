@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+/* 
+# Padrão BEM
+Bloco           .lista
+Elemento        .lista__item
+Modificador     .lista__item-destaque
+*/
+
+/* Reset */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --text-light: #fff;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.app_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    height: 200px;
+    background-image: url('./assets/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app_header__info {
+    color: var(--text-light);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.app_header__button {
+    display: block;
+    width: 52px;
+    height: 52px;
+    background-image: url('./assets/trash.png');
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__pauta {
+    margin-top: -63px;
+    z-index: 2;
+    width: 333px;
+    height: 360px;
+    background-image: url('./assets/pauta_sol.png');
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.app__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app__button {
+    cursor: pointer;
+    width: 80px;
+    height: 54px;
+    font-size: 1.5em;
+    margin: 4px;
+    border: 0;
+    border-radius: 16px;
+}
+
+.app__button-right {
+    background-color: rgb(112, 227, 70);
+    color: #fff;
+}
+
+.app__button-error {
+    background-color: rgb(227, 70, 70);
+    color: #fff;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 8px;
+}
