@@ -11,11 +11,22 @@
 <body>
     <header class="app_header">
         <div class="app_header__info">
-            <h2>Rodada: <span id="text_rodada">1</span></h2>
+            <h4>Rodada: <span id="text_rodada">1</span></h4>
+            <h2>Acertos: <span id="text_acertos">0</span></h2>
+            <h3>Erros: <span id="text_erros">0</span></h3>
+        </div>
+        <div>
+            <a href="javascript:void(0)" id="button_recomecar">
+                <img src="./assets/trash.png" alt="recomeçar">
+            </a>
         </div>
     </header>
     <main class="app">
-        <section class="app__pauta" id="pentagrama"></section>
+        <section class="app__pauta" id="pentagrama">
+            <div class="app_personagem__container">
+                <span id="text_personagem">🙂</span>
+            </div>
+        </section>
         <section class="app__buttons">
             <button class="app__button" id="btn_do">Dó</button>
             <button class="app__button" id="btn_re">Ré</button>
