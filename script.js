@@ -52,7 +52,7 @@ async function main() {
     ]
 
     const personagemAcertos = [
-        '😐' ,'🙂', '😀', '😃', '😄', '😁', '😙', '🥳', '😍', '🤩', '😎', '🏆'
+        '😐' ,'🙂', '😀', '😃', '😄', '😁', '😙', '🥳', '😍', '🤩', '😎', '🏅', '🎖', '💃🏆🕺'
     ]
 
     let personagemAcertosPos = 0
@@ -79,23 +79,21 @@ async function main() {
 
     function mudarPersonagem(tipo) {
 
-        let personagem = ''
-
         if (tipo == 'acerto'){
             if (personagemAcertosPos < personagemAcertos.length){
-                personagem = personagemAcertos[personagemAcertosPos]
+                textPersonagem.innerHTML = personagemAcertos[personagemAcertosPos]
                 personagemErrosPos = 0
                 personagemAcertosPos += 1
             }
         } else {
             if (personagemErrosPos < personagemErros.length){
-                personagem = personagemErros[personagemErrosPos]
+                textPersonagem.innerHTML = personagemErros[personagemErrosPos]
                 personagemAcertosPos = 0
                 personagemErrosPos += 1
             }
         }
 
-        textPersonagem.innerHTML = personagem
+        
     }
 
     // Botão recomeçar
