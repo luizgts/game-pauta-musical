@@ -1,0 +1,28 @@
+{
+  "name": "notaspentagrama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizgts/GamePautaMusical.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizgts/GamePautaMusical/issues"
+  },
+  "homepage": "https://github.com/luizgts/GamePautaMusical#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {}
+}
